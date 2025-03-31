@@ -149,7 +149,7 @@
             <button class="border border-[#4361ee] text-[#4361ee] px-6 py-3 rounded-md hover:bg-[#4361ee] hover:text-white" onclick="scrollToSection('contact')">Start Free Trial</button>
           </div>
           <div class="relative w-full max-w-4xl mx-auto">
-            <div class="aspect-video rounded-xl bg-gradient-to-r from-[hsla(var(--primary),0.1)] to-[hsla(var(--primary),0.3)] flex items-center justify-center">
+            <div class="aspect-video rounded-xl bg-gradient-to-r from-[hsla(var(--primary),0.1)] to-[hs-scope var(--primary),0.3)] flex items-center justify-center">
               <div class="bg-white/90 dark:bg-gray-900/90 p-6 rounded-lg shadow-lg max-w-lg">
                 <div class="flex items-center gap-4 mb-4">
                   <div class="w-12 h-12 rounded-full bg-[hsla(var(--primary),0.2)] flex items-center justify-center">
@@ -163,21 +163,21 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div class="p-3 bg-[hsl(var(--muted))] rounded-md">
                     <div class="text-xs text-[hsl(var(--muted-foreground))] mb-1">Input (XML)</div>
-                    <pre class="text-xs overflow-x-auto language-markup">&lt;Prod&gt;
+                    <pre class="text-xs overflow-x-auto language-markup"><code>&lt;Prod&gt;
   &lt;ID&gt;123&lt;/ID&gt;
   &lt;Cost&gt;49.99&lt;/Cost&gt;
   &lt;Name&gt;Premium Headphones&lt;/Name&gt;
   &lt;Stock&gt;42&lt;/Stock&gt;
-&lt;/Prod&gt;</pre>
+&lt;/Prod&gt;</code></pre>
                   </div>
                   <div class="p-3 bg-[hsl(var(--muted))] rounded-md">
                     <div class="text-xs text-[hsl(var(--muted-foreground))] mb-1">Output (JSON)</div>
-                    <pre class="text-xs overflow-x-auto language-json">{
+                    <pre class="text-xs overflow-x-auto language-json"><code>{
   "productCode": "123",
   "name": "Premium Headphones",
   "price": 49.99,
   "inventory": 42
-}</pre>
+}</code></pre>
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@
             <p class="text-[hsl(var(--muted-foreground))] mb-4">Describe your ideal data structure using JSON schema or natural language</p>
             <div class="bg-[hsl(var(--muted))] p-3 rounded-md mb-4">
               <div class="text-xs text-[hsl(var(--muted-foreground))] mb-1">JSON Schema Example</div>
-              <pre class="text-xs overflow-x-auto language-json">{
+              <pre class="text-xs overflow-x-auto language-json"><code>{
   "type": "object",
   "properties": {
     "productId": { "type": "string" },
@@ -211,7 +211,7 @@
     "price": { "type": "number" },
     "inventory": { "type": "integer" }
   }
-}</pre>
+}</code></pre>
             </div>
             <ul class="space-y-2">
               <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Define once, use everywhere</li>
@@ -246,12 +246,12 @@
             <div class="bg-[hsl(var(--muted))] p-3 rounded-md mb-4">
               <div class="flex justify-between text-xs text-[hsl(var(--muted-foreground))] mb-1"><span>Before</span><span>After</span></div>
               <div class="flex gap-2">
-                <pre class="flex-1 text-xs overflow-hidden language-markup">&lt;Prod&gt;
+                <pre class="flex-1 text-xs overflow-hidden language-markup"><code>&lt;Prod&gt;
   &lt;ID&gt;123&lt;/ID&gt;
-  &lt;Cost&gt;49.99&lt;/Cost&gt;</pre>
-                <pre class="flex-1 text-xs overflow-hidden language-json">{
+  &lt;Cost&gt;49.99&lt;/Cost&gt;</code></pre>
+                <pre class="flex-1 text-xs overflow-hidden language-json"><code>{
   "productId": "123",
-  "price": 49.99</pre>
+  "price": 49.99</code></pre>
               </div>
             </div>
             <ul class="space-y-2">
@@ -271,17 +271,195 @@
           <p class="text-xl text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">See how GlueIt AI transforms data across different industries</p>
         </div>
         <div class="w-full">
-          <div class="inline-flex h-10 items-center justify-center rounded-md bg-[hsl(var(--muted))] p-1 text-[hsl(var(--muted-foreground))] mb-8 grid w-full grid-cols-2 md:grid-cols-6">
-            <button data-tab="ecommerce" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm">E-Commerce</button>
-            <button data-tab="healthcare" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm">Healthcare</button>
-            <button data-tab="fintech" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm">Fintech</button>
-            <button data-tab="logistics" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm">Logistics</button>
-            <button data-tab="iot" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm">IoT/Manufacturing</button>
-            <button data-tab="social" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm">Social Media</button>
+          <div class="inline-flex h-10 items-center justify-center rounded-md bg-[hsl(var(--muted))] p-1 text-[hsl(var(--muted-foreground))] mb-8 grid w-full grid-cols-2 md:grid-cols-6 relative">
+            <button data-tab="social" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm relative">
+              Social Media
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">Live</span>
+            </button>
+            <button data-tab="ecommerce" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm relative">
+              E-Commerce
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Upcoming</span>
+            </button>
+            <button data-tab="healthcare" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm relative">
+              Healthcare
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Upcoming</span>
+            </button>
+            <button data-tab="fintech" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm relative">
+              Fintech
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Upcoming</span>
+            </button>
+            <button data-tab="logistics" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm relative">
+              Logistics
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Upcoming</span>
+            </button>
+            <button data-tab="iot" class="tab-button inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[hsl(var(--ring))] focus:ring-offset-2 data-active:bg-[hsl(var(--background))] data-active:text-[hsl(var(--foreground))] data-active:shadow-sm relative">
+              IoT/Manufacturing
+              <span class="absolute top-0 right-0 -mt-2 -mr-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Upcoming</span>
+            </button>
           </div>
           <div id="tab-content">
+            <!-- Social Media -->
+            <div class="tab-pane grid grid-cols-1 lg:grid-cols-2 gap-8" data-tab="social">
+              <div>
+                <h3 class="text-2xl font-bold mb-4">Social Media Data Integration</h3>
+                <div class="mb-6"><h4 class="font-semibold mb-2">The Problem</h4><p class="text-[hsl(var(--muted-foreground))]">Social platforms (Twitter, Instagram, Facebook) have incompatible post formats - likes vs favorites, different field names, nested engagement metrics</p></div>
+                <div class="mb-6"><h4 class="font-semibold mb-2">The Solution</h4><p class="text-[hsl(var(--muted-foreground))]">Normalize social media data from any platform into a unified format for analytics</p></div>
+                <div><h4 class="font-semibold mb-2">Business Impact</h4><ul class="space-y-2">
+                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Unified social listening across 5+ platforms</li>
+                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>60% faster campaign reporting</li>
+                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Influencer ROI tracking in single dashboard</li>
+                </ul></div>
+              </div>
+              <div class="bg-[hsla(var(--muted),0.3)] rounded-xl p-6">
+                <h4 class="font-semibold mb-4">Data Transformation Example</h4>
+                <div class="grid grid-cols-1 gap-6">
+                  <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input (Multiple Sources)</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>// Facebook API
+{
+  "id": "2052097965223294",
+  "name": "Priya Patel",
+  "email": "priya.patel@email.com",
+  "verified": true,
+  "location": {
+    "id": "106078429431816",
+    "name": "Bangalore, Karnataka"
+  },
+  "posts": {
+    "data": [
+      {
+        "id": "post_223456",
+        "message": "Celebrating 5 years at TechCorp! 🎉 #CareerMilestone",
+        "created_time": "2024-01-15T08:30:00+0000",
+        "reactions": {
+          "summary": {
+            "total_count": 567,
+            "reaction_types": {
+              "LIKE": 389,
+              "LOVE": 156,
+              "WOW": 22
+            }
+          }
+        },
+        "comments": {
+          "summary": { "total_count": 145 }
+        },
+        "shares": { "count": 23 }
+      }
+    ]
+  },
+  "friends": { "summary": { "total_count": 892 } }
+}
+
+// Twitter API
+{
+  "id_str": "2052097965223294",
+  "screen_name": "priyapatel",
+  "followers_count": 1200,
+  "statuses": [
+    {
+      "id_str": "tw_789",
+      "text": "Excited for the new project launch! #TechLife",
+      "created_at": "Mon Mar 10 14:22:17 +0000 2025",
+      "favorite_count": 320,
+      "retweet_count": 85
+    }
+  ]
+}
+</code></pre>
+                  </div>
+                  <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Domain Model</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON SCHEMA</span></div>
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
+  "type": "object",
+  "properties": {
+    "user_identity": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "username": { "type": "string" },
+        "identifier": { "type": "string" },
+        "email": { "type": "string" }
+      }
+    },
+    "engagement_metrics": {
+      "type": "object",
+      "properties": {
+        "followers": { "type": "string" },
+        "friends": { "type": "string" }
+      }
+    },
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "image": { "type": "string" },
+              "created_at": { "type": "number" }
+            }
+          },
+          "impressions": {
+            "type": "object",
+            "properties": {
+              "likes": { "type": "number" },
+              "shares": { "type": "number" },
+              "comments": { "type": "number" }
+            }
+          }
+        }
+      }
+    }
+  }
+}</code></pre>
+                  </div>
+                  <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
+                  <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
+  "user_identity": {
+    "name": "Priya Patel",
+    "username": "priyapatel",
+    "identifier": "2052097965223294",
+    "email": "priya.patel@email.com"
+  },
+  "engagement_metrics": {
+    "followers": "1200",
+    "friends": "892"
+  },
+  "posts": [
+    {
+      "content": {
+        "text": "Celebrating 5 years at TechCorp! 🎉 #CareerMilestone",
+        "image": null,
+        "created_at": 1705303800000
+      },
+      "impressions": {
+        "likes": 567,
+        "shares": 23,
+        "comments": 145
+      }
+    },
+    {
+      "content": {
+        "text": "Excited for the new project launch! #TechLife",
+        "image": null,
+        "created_at": 1741614137000
+      },
+      "impressions": {
+        "likes": 320,
+        "shares": 85,
+        "comments": null
+      }
+    }
+  ]
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- E-Commerce -->
-            <div class="tab-pane grid grid-cols-1 lg:grid-cols-2 gap-8" data-tab="ecommerce">
+            <div class="tab-pane grid grid-cols-1 lg:grid-cols-2 gap-8 hidden" data-tab="ecommerce">
               <div>
                 <h3 class="text-2xl font-bold mb-4">E-Commerce Data Integration</h3>
                 <div class="mb-6"><h4 class="font-semibold mb-2">The Problem</h4><p class="text-[hsl(var(--muted-foreground))]">Managing product data across multiple suppliers with inconsistent formats</p></div>
@@ -296,21 +474,21 @@
                 <h4 class="font-semibold mb-4">Data Transformation Example</h4>
                 <div class="grid grid-cols-1 gap-6">
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">XML</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup">&lt;Prod&gt;
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup"><code>&lt;Prod&gt;
   &lt;ID&gt;123&lt;/ID&gt;
   &lt;Cost&gt;49.99&lt;/Cost&gt;
   &lt;Name&gt;Premium Headphones&lt;/Name&gt;
   &lt;Stock&gt;42&lt;/Stock&gt;
-&lt;/Prod&gt;</pre>
+&lt;/Prod&gt;</code></pre>
                   </div>
                   <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
   "productCode": "123",
   "name": "Premium Headphones",
   "price": 49.99,
   "inventory": 42
-}</pre>
+}</code></pre>
                   </div>
                 </div>
               </div>
@@ -331,11 +509,11 @@
                 <h4 class="font-semibold mb-4">Data Transformation Example</h4>
                 <div class="grid grid-cols-1 gap-6">
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">TEXT</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup">PID|||PATID1234^5^M11^ADT1^MR^CHC~123456^^^CF^PN|DOE^JOHN^^^^|||M||||||123 MAIN ST^^ANYTOWN^NY^12345</pre>
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup"><code>PID|||PATID1234^5^M11^ADT1^MR^CHC~123456^^^CF^PN|DOE^JOHN^^^^|||M||||||123 MAIN ST^^ANYTOWN^NY^12345</code></pre>
                   </div>
                   <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
   "resourceType": "Patient",
   "id": "PATID1234",
   "name": [
@@ -353,7 +531,7 @@
       "postalCode": "12345"
     }
   ]
-}</pre>
+}</code></pre>
                   </div>
                 </div>
               </div>
@@ -374,7 +552,7 @@
                 <h4 class="font-semibold mb-4">Data Transformation Example</h4>
                 <div class="grid grid-cols-1 gap-6">
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
   "txn_id": "TXN-1001",
   "transaction_details": {
     "amount": {
@@ -387,11 +565,11 @@
     "id": "MERCH-456",
     "name": "Coffee Shop"
   }
-}</pre>
+}</code></pre>
                   </div>
                   <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
   "transaction_id": "TXN-1001",
   "amount": 500.00,
   "currency": "USD",
@@ -399,7 +577,7 @@
   "time": "14:22:17",
   "merchant_id": "MERCH-456",
   "merchant_name": "Coffee Shop"
-}</pre>
+}</code></pre>
                   </div>
                 </div>
               </div>
@@ -420,7 +598,7 @@
                 <h4 class="font-semibold mb-4">Data Transformation Example</h4>
                 <div class="grid grid-cols-1 gap-6">
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">XML</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup">&lt;TrackingResponse&gt;
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup"><code>&lt;TrackingResponse&gt;
   &lt;TrackingNumber&gt;7891234560&lt;/TrackingNumber&gt;
   &lt;ShipmentInfo&gt;
     &lt;ServiceType&gt;FEDEX_EXPRESS&lt;/ServiceType&gt;
@@ -432,11 +610,11 @@
       &lt;Country&gt;US&lt;/Country&gt;
     &lt;/CurrentLocation&gt;
   &lt;/ShipmentInfo&gt;
-&lt;/TrackingResponse&gt;</pre>
+&lt;/TrackingResponse&gt;</code></pre>
                   </div>
                   <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
   "tracking_id": "7891234560",
   "carrier": "fedex",
   "service_level": "express",
@@ -447,7 +625,7 @@
     "state": "GA",
     "country": "US"
   }
-}</pre>
+}</code></pre>
                   </div>
                 </div>
               </div>
@@ -459,7 +637,7 @@
                 <div class="mb-6"><h4 class="font-semibold mb-2">The Problem</h4><p class="text-[hsl(var(--muted-foreground))]">Integrating data from diverse sensors and industrial equipment</p></div>
                 <div class="mb-6"><h4 class="font-semibold mb-2">The Solution</h4><p class="text-[hsl(var(--muted-foreground))]">Standardize IoT data from any device into a consistent format for analytics</p></div>
                 <div><h4 class="font-semibold mb-2">Business Impact</h4><ul class="space-y-2">
-                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Real-time IoT dashboards updated in milliseconds</li>
+                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Real-time IoT dashboards updated croit in milliseconds</li>
                   <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>50% reduction in data pipeline complexity</li>
                   <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Added new sensors without reconfiguring visualization systems</li>
                 </ul></div>
@@ -468,7 +646,7 @@
                 <h4 class="font-semibold mb-4">Data Transformation Example</h4>
                 <div class="grid grid-cols-1 gap-6">
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">XML</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup">&lt;SensorData&gt;
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-markup"><code>&lt;SensorData&gt;
   &lt;SensorID&gt;TEMP-101&lt;/SensorID&gt;
   &lt;ReadingTime&gt;2025-03-22T16:45:22&lt;/ReadingTime&gt;
   &lt;Values&gt;
@@ -477,11 +655,11 @@
     &lt;Pressure units="kPa"&gt;101.3&lt;/Pressure&gt;
   &lt;/Values&gt;
   &lt;BatteryLevel&gt;78&lt;/BatteryLevel&gt;
-&lt;/SensorData&gt;</pre>
+&lt;/SensorData&gt;</code></pre>
                   </div>
                   <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
                   <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
+                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json"><code>{
   "device_id": "TEMP-101",
   "timestamp": "2025-03-22T16:45:22",
   "readings": {
@@ -495,72 +673,7 @@
     "humidity": "%",
     "pressure": "kPa"
   }
-}</pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Social Media -->
-            <div class="tab-pane grid grid-cols-1 lg:grid-cols-2 gap-8 hidden" data-tab="social">
-              <div>
-                <h3 class="text-2xl font-bold mb-4">Social Media Data Integration</h3>
-                <div class="mb-6"><h4 class="font-semibold mb-2">The Problem</h4><p class="text-[hsl(var(--muted-foreground))]">Social platforms (Twitter, Instagram, Facebook) have incompatible post formats - likes vs favorites, different field names, nested engagement metrics</p></div>
-                <div class="mb-6"><h4 class="font-semibold mb-2">The Solution</h4><p class="text-[hsl(var(--muted-foreground))]">Normalize social media data from any platform into a unified format for analytics</p></div>
-                <div><h4 class="font-semibold mb-2">Business Impact</h4><ul class="space-y-2">
-                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Unified social listening across 5+ platforms</li>
-                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>60% faster campaign reporting</li>
-                  <li class="flex items-start gap-2"><svg class="h-5 w-5 text-[#4361ee] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>Influencer ROI tracking in single dashboard</li>
-                </ul></div>
-              </div>
-              <div class="bg-[hsla(var(--muted),0.3)] rounded-xl p-6">
-                <h4 class="font-semibold mb-4">Data Transformation Example</h4>
-                <div class="grid grid-cols-1 gap-6">
-                  <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Input</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">// Twitter API
-{
-  "id_str": "123",
-  "favorite_count": 45,
-  "retweet_count": 12,
-  "user": {"screen_name": "user1"}
-}
-
-// Instagram API
-{
-  "id": "456",
-  "like_count": 120,
-  "comments_count": 15,
-  "owner": {"username": "user2"}
-}</pre>
-                  </div>
-                  <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Domain Model</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON SCHEMA</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">{
-  "post_id": "platform-id",
-  "platform": "string",
-  "engagement": {
-    "likes": "number",
-    "shares": "number",
-    "comments": "number"
-  },
-  "author": "string"
-}</pre>
-                  </div>
-                  <div class="flex justify-center"><div class="bg-[hsla(var(--primary),0.1)] rounded-full p-2"><svg class="h-5 w-5 text-[#4361ee]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div></div>
-                  <div><div class="flex items-center justify-between mb-2"><h5 class="text-sm font-medium">Output</h5><span class="text-xs px-2 py-1 bg-[hsl(var(--muted))] rounded-md">JSON</span></div>
-                    <pre class="rounded-md bg-[hsl(var(--muted))] p-4 overflow-x-auto language-json">// Twitter
-{
-  "post_id": "twitter-123",
-  "platform": "twitter",
-  "engagement": {"likes":45,"shares":12,"comments":0},
-  "author": "user1"
-}
-
-// Instagram 
-{
-  "post_id": "instagram-456",
-  "platform": "instagram",
-  "engagement": {"likes":120,"shares":0,"comments":15},
-  "author": "user2"
-}</pre>
+}</code></pre>
                   </div>
                 </div>
               </div>
@@ -698,7 +811,7 @@
         });
       });
 
-      // Set initial active tab
+      // Set initial active tab to Social Media
       buttons[0].setAttribute('data-active', '');
       Prism.highlightAll();
     });
